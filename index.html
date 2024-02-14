@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <label style="padding-right: 20px;" for="f_name">First Name:</label>
+        <input type="text" id="f_name" name="first_name" placeholder="enter first name" required><br>
+        <label style="padding-right: 20px;" for="l_name">Last Name:</label>
+        <input type="text" id="l_name" name="last_name" placeholder="enter last name" required><br>
+        <label style="padding-right: 52px;" for="mail">Email:</label>
+        <input type="email" id="mail" name="email" placeholder="enter your mail" required><br>
+        <label style="padding-right: 35px;" for="pswd">Password</label>
+        <input type="password" name="pswd" id="pswd" placeholder="enter password" required><br>
+        <input style="margin-left: 100px;" type="password" name="pswd" id="pswd" placeholder="re-enter password"
+            required><br>
+        <label style="padding-right: 45px;" for="num">Mobile:</label>
+        <input type="tel" name="mobile" id="num" placeholder="enter mobile number" pattern="[0-9]{10}"
+            required><br>
+        <label style="padding-right: 5px;" for="dob">Date Of Birth:</label>
+        <input style="width: 165px;" type="date" name="DOB" id="dob" required><br>
+        <label for="In">In URL:</label>
+        <input style="margin-left: 42px;" type="url" name="url" id="In" placeholder="LinkedIn URL"><br>
+        <label for="skills">Skills:</label><br>
+        <input type="checkbox" name="skill1" id="skills" value="HTML">HTML<br>
+        <input type="checkbox" name="skill2" id="skills" value="CSS">CSS<br>
+        <input type="checkbox" name="skill3" id="skills" value="JavaScript">JavaScript<br>
+        <input type="checkbox" name="skill4" id="skills" value="React">React<br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" id="gender" value="Male">Male
+        <input type="radio" name="gender" id="gender" value="Female">Female
+        <input type="radio" name="gender" id="gender" value="Others">Others <br><br>
+        <label for="location">Location</label>
+        <select name="location" id="location">
+            <option value="select" disabled selected>select</option>
+            <option value="Khammam">Khammam</option>
+            <option value="Hyderabad">HYderabad</option>
+            <option value="Warangal">Warangal</option>
+        </select><br>
+        <label style="margin-left: 5px;" for="pic">Upload Picture</label>
+        <input type="file" name="pic" id="pic" required ><br>
+        <label for="resume">Upload Resume</label>
+        <input type="file" name="resume" id="resume" required multiple><br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Register" formaction="./30 jan(login).html">
+
+    </form><br>
+    
+
+</body>
+
+</html>
